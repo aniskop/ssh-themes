@@ -36,3 +36,13 @@ For instance, let's assume PuTTY session name is "My_Session" and .reg file cont
 ```
 
 With a text editor in the .reg file change "WinSSHTerm" to "My_Session", save changes and double-click the .reg file to import it to the Windows registry. From now the color theme will be used for the specified PuTTY session.
+
+# Hints on checking colors
+
+No matter whether you are creating your own color theme or using one of these, here are some hints to check how color theme looks like:
+* Launch `print-colors.sh` &ndash; it prints current colors and their meaning.
+* Launch `mc` (Midnight Commander) and see how colors look in:
+  * main window background,
+  * menu,
+  * search dialogs.
+* Launch `vim` and search for a text. Check wheter cursor is visible on the search hit background. `vim` uses Color12 (yellow) for search hit &ndash; so make sure your Color5 (cursor color) is not the same.
